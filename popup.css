@@ -1,0 +1,155 @@
+html {
+    width: 620px;
+    height: 578px;
+}
+
+body {
+    padding: 10px;
+    font-size: 12px;
+    font-family: "Lucida Console", serif;
+    color: white;
+    background-color: #482E1D;
+}
+
+textarea {
+    font-size: 12px;
+    font-family: "Lucida Console", serif;
+    background-color: #F0DAAE;
+    resize: vertical;
+}
+
+.regular-button {
+    border-radius: 7px;
+    width: 100px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: "Lucida Console", serif;
+    color: white;
+    background-color: #895D2B;
+    border: 2px solid #a88b69;
+    cursor: pointer;
+}
+
+.regular-button:hover {
+    background-color: #755025;
+}
+
+.regular-button:active {
+    background-color: #654a2a;
+}
+
+.push-button {
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: "Lucida Console", serif;
+    color: white;
+    background-color: #895D2B;
+    box-shadow: 0 3px #a88b69;
+    cursor: pointer;
+}
+
+.push-button:hover {
+    background-color: #755025;
+}
+
+.push-button:active {
+    background-color: #6e4e29;
+    box-shadow: 0 3px #7e6549;
+    transform: translateY(4px);
+}
+
+.dropdown-container {
+    display: none;
+}
+
+.show {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 102px;
+    margin-top: 5px;
+    outline: 3px solid #c2aa8a;
+    border-radius: 3px;
+}
+
+.dropdown-container input {
+    border: none;
+    font-size: 12px;
+    padding: 4px;
+    background-color: #F0DAAE;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-container button {
+    border: none;
+    padding: 4px;
+    text-align: left;
+    font-size: 12px;
+    font-family: "Lucida Console", serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
+    background-color: #a6855f;
+    cursor: pointer;
+}
+
+.dropdown-container button:hover {
+    background-color: #8c6c49;
+}
+
+.dropdown-container button:active {
+    background-color: #8c6c49;
+}
+
+select {
+    background-color: #F0DAAE;
+}
+
+option {
+    background-color: #a88b69;
+}
+
+.parent-container {
+    display: flex;
+}
+
+.first-child-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.second-child-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    height: 160px;
+}
+
+.single-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.name-alignment {
+    display: flex;
+    align-items: center;
+}

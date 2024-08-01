@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Web Automation Plugin</title>
+    <link rel="stylesheet" href="popup.css">
+
+</head>
+
+<body>
+
+    <div class="parent-container">
+
+        <div class="first-child-container">
+            <div class="name-alignment">
+                <label for="nameTextarea">Board name:</label>
+                <textarea id="nameTextarea" rows="1" cols="15" readonly></textarea>
+            </div>
+
+            <div class="buttons-container">
+                <button id="renameBoardButton" class="regular-button">Rename board</button>
+                <button id="deleteBoardButton" class="regular-button">Delete board</button>
+                <button id="exportBoardButton" class="regular-button">Export board</button>
+            </div>
+
+            <div>
+                <label for="columnsTextarea">Board columns:</label><br><br>
+                <textarea id="columnsTextarea" rows="3" cols="43" readonly></textarea>
+            </div>
+        </div>
+
+        <div class="second-child-container">
+            <button id="addGroupButton" class="regular-button">Add group</button>
+
+            <div>
+                <button id="renameGroupButton" class="regular-button">Rename group</button>
+
+                <div id="renameGroupDropdown" class="dropdown-container">
+                    <input id="renameGroupInput" type="text" placeholder="Search...">
+                    <div id="renameGroupOptions" class="options-container"></div>
+                </div>
+            </div>
+
+            <div>
+                <button id="deleteGroupButton" class="regular-button">Delete group</button>
+
+                <div id="deleteGroupDropdown" class="dropdown-container">
+                    <input id="deleteGroupInput" type="text" placeholder="Search...">
+                    <div id="deleteGroupOptions" class="options-container"></div>
+                </div>
+            </div>
+
+            <div>
+                <button id="exportGroupButton" class="regular-button">Export group</button>
+
+                <div id="exportGroupDropdown" class="dropdown-container">
+                    <input id="exportGroupInput" type="text" placeholder="Search...">
+                    <div id="exportGroupOptions" class="options-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-child-container">
+            <label>Current group:</label>
+            <select id="groupsSelect">
+            </select>
+
+            <button id="addRowButton" class="regular-button">Add row</button>
+
+            <div>
+                <button id="updateRowButton" class="regular-button">Update row</button>
+
+                <div id="updateRowDropdown" class="dropdown-container">
+                    <input id="updateRowInput" type="text" placeholder="Search...">
+                    <div id="updateRowOptions" class="options-container"></div>
+                </div>
+            </div>
+
+            <div>
+                <button id="deleteRowButton" class="regular-button">Delete row</button>
+
+                <div id="deleteRowDropdown" class="dropdown-container">
+                    <input id="deleteRowInput" type="text" placeholder="Search...">
+                    <div id="deleteRowOptions" class="options-container"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="single-container">
+        <label for="operationsTextarea">Automation script:</label><br>
+        <textarea id="operationsTextarea" rows="25" cols="20"></textarea><br>
+
+        <div>
+            <button id="executeOperationsButton" class="push-button">Execute</button>
+
+            <button id="clearOperationsButton" class="push-button">Clear</button>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>

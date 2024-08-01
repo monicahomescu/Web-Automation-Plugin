@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Web Automation Plugin",
+  "version": "0.0.1",
+  "description": "Web automation plugin for managing boards on monday.com",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "24": "icon.png",
+      "32": "icon.png"
+    },
+    "default_title": "Web Automation Plugin",
+    "default_popup": "popup.html"
+  },
+  "author": "Homescu Monica Daniella",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.monday.com/*"],
+      "runAt" : "document_end",
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["storage"],
+  "host_permissions": ["https://*.monday.com/*"]
+}
