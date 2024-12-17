@@ -22,7 +22,7 @@ Group operations allow users to manage groups within the board. When adding a ne
 Row operations manage tasks within a specific group, which is chosen by the user through the select group textbox. To insert a new row, users must fill in the desired values in the template, ensuring that the main column is not empty (since monday.com does not allow the user to leave the main column empty). For updating and deleting rows, a dropdown appears on mouse hover, allowing the user to choose the row to perform the operation on. Additionally, a search bar is available, giving the user the choice to find a row based on any key letters present in the main column. For updates, the current values of the row are pre-filled, and users can modify them as needed. For deletions, no further modifications are necessary. Each time a group is selected, the dropdown resets with row options for the newly selected group.
 
 <p align="center">
-  <img width="65%" height="65%" src="/demos/demo5.png">
+  <img width="70%" height="70%" src="/demos/demo5.png">
 </p>
 
 Users can choose to automate as many operations as needed, and the order of these operations does not matter. Once the automation script is complete, it can be executed by clicking the ”Execute” button. The textbox content is preserved across automation sessions, enabling users to close the plugin and return later to continue configuring the automation script. To remove all operations from the textbox, users can click the ”Clear” button.
